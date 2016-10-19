@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 
 changeb1
+=======
+hello world changec4
+>>>>>>> c4

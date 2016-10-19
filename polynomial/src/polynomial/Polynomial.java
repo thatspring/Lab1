@@ -1,8 +1,14 @@
 package polynomial;
 import java.util.Scanner;
 /*ÐÞ¸Ä*/
+<<<<<<< HEAD
 
 /*changeb1*/
+=======
+/*change*/
+/*changec4*/
+
+>>>>>>> c4
 public class Polynomial 
  {
 	static String expression = "";

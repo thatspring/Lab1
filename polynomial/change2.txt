@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 
 changeb1
+=======
+change2 changec4
+>>>>>>> c4
