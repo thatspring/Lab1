@@ -2,7 +2,7 @@ package polynomial;
 import java.util.Scanner;
 /*ÐÞ¸Ä*/
 /*change*/
-
+/*changec4*/
 
 public class Polynomial 
  {
