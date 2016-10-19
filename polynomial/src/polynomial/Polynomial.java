@@ -2,7 +2,7 @@ package polynomial;
 import java.util.Scanner;
 /*ÐÞ¸Ä*/
 
-
+/*changeb1*/
 public class Polynomial 
  {
 	static String expression = "";
