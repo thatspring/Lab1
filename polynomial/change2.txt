@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 changeb1
 =======
 change2 changec4
 >>>>>>> c4
+=======
+changeb2
+>>>>>>> b2
