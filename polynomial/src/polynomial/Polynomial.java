@@ -1,6 +1,7 @@
 package polynomial;
 import java.util.Scanner;
 /*ÐÞ¸Ä*/
+/*second change*/
 
 
 public class Polynomial 
