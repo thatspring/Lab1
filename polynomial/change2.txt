@@ -1,11 +1,10 @@
 <<<<<<< HEAD
-readme
 <<<<<<< HEAD
-change b1
+
+changeb1
 =======
-readme changec4
+change2 changec4
 >>>>>>> c4
 =======
-
-change b2
+changeb2
 >>>>>>> b2
