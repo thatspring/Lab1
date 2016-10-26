@@ -4,6 +4,9 @@ import java.util.Scanner;
 /*ÐÞ¸Ä*/
 
 public class Polynomial {
+  /**
+  *class information
+  */
   static String expression = "";
   static String command = "";
   static String[] expre;
