@@ -8,7 +8,7 @@ public class Polynomial
 	static String expression = "";
 	static String command = "";
 	static String expre[];
-	static String Simplify(String[] expre, String[] value)
+	static void Simplify(String[] value)
 	{
 		String sim_expression = "";
 		String[] temp_exp = null;
@@ -66,10 +66,9 @@ public class Polynomial
 		if(sim_expression.endsWith("+") || sim_expression.endsWith("-"))
 			sim_expression = sim_expression.substring(0, sim_expression.length()-1);
 		System.out.println(sim_expression);
-		expression(expression);
-		return sim_expression;
+		expression();
 	}
-	static String Derivative(String[] expre, String value)
+	static void Derivative(String value)
 	{
 		String[] temp=null;
 		String[] str_temp = null;
@@ -141,12 +140,10 @@ public class Polynomial
 			der_str = der_str.replace("++", "+");
 		}
 		System.out.println(der_str);
-		return der_str;
 	}
-	static String[] expression(String expression)
+	static void expression()
 	{
-		String[] expre=expression.split("\\+");
-		return expre;
+		expre=expression.split("\\+");
 	}
 	static boolean judge(String expression)
 	{
@@ -185,7 +182,7 @@ public class Polynomial
 							System.out.println("Error, no variable");
 						}
 						else{
-							Simplify(expre, value);
+							Simplify(value);
 						}
 					}
 					else if(command.startsWith("!d/d")){
@@ -194,7 +191,7 @@ public class Polynomial
 							System.out.println("Error, no variable");
 						}
 						else{
-							Derivative(expre, valuename);
+							Derivative(valuename);
 						}
 					}
 					else{
@@ -214,7 +211,7 @@ public class Polynomial
 					if(expression.startsWith("+"))
 					expression=expression.substring(1);
 					expression = expression.replace("-", "+-1*");
-					expre=expression(expression);
+					expression();
 				}
 				else{
 					System.out.println("illegal char");
