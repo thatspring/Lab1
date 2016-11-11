@@ -8,7 +8,7 @@ public class Polynomial
 	static String expression = "";
 	static String command = "";
 	static String expre[];
-	static void Simplify(String[] value)
+	static void Simplify(String[] expre,String[] value)
 	{
 		String sim_expression = "";
 		String[] temp_exp = null;
@@ -68,7 +68,7 @@ public class Polynomial
 		System.out.println(sim_expression);
 		expression();
 	}
-	static void Derivative(String value)
+	static void Derivative(String[] expre, String value)
 	{
 		String[] temp=null;
 		String[] str_temp = null;
@@ -182,7 +182,7 @@ public class Polynomial
 							System.out.println("Error, no variable");
 						}
 						else{
-							Simplify(value);
+							Simplify(expre,value);
 						}
 					}
 					else if(command.startsWith("!d/d")){
@@ -191,7 +191,7 @@ public class Polynomial
 							System.out.println("Error, no variable");
 						}
 						else{
-							Derivative(valuename);
+							Derivative(expre,valuename);
 						}
 					}
 					else{
