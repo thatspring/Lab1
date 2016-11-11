@@ -26,7 +26,7 @@ public class PolynomialTest {
 		String expectResult = "1+4*y+6*z";
 		assertEquals(expectResult, result);
 	}
-
+	//测试
 	@Test
 	public void testDerivative() {
 		//fail("Not yet implemented");
