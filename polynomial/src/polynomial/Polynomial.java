@@ -8,7 +8,7 @@ public class Polynomial
 	static String expression = "";
 	static String command = "";
 	static String expre[];
-	static void Simplify(String[] expre,String[] value)
+	static String Simplify(String[] expre,String[] value)
 	{
 		String sim_expression = "";
 		String[] temp_exp = null;
@@ -67,8 +67,9 @@ public class Polynomial
 			sim_expression = sim_expression.substring(0, sim_expression.length()-1);
 		System.out.println(sim_expression);
 		expression();
+		return sim_expression;
 	}
-	static void Derivative(String[] expre, String value)
+	static String Derivative(String[] expre, String value)
 	{
 		String[] temp=null;
 		String[] str_temp = null;
@@ -140,10 +141,12 @@ public class Polynomial
 			der_str = der_str.replace("++", "+");
 		}
 		System.out.println(der_str);
+		return der_str;
 	}
-	static void expression()
+	static String[] expression()
 	{
 		expre=expression.split("\\+");
+		return expre;
 	}
 	static boolean judge(String expression)
 	{
