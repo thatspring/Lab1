@@ -12,6 +12,7 @@ public class PolynomialTest2 {
 	public void setUp() throws Exception {
 	}
 
+
 	@After
 	public void tearDown() throws Exception {
 	}
