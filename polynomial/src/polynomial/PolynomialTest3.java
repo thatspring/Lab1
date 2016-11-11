@@ -8,6 +8,7 @@ import org.junit.Test;
 
 public class PolynomialTest3 {
 
+
 	@Before
 	public void setUp() throws Exception {
 	}
