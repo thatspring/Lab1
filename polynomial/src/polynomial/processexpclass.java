@@ -14,7 +14,7 @@ package polynomial;
 
 public class processexpclass {
     private String Expression;
-    private String Command;
+    private String command;
     private int CmdFlag;
     private String Out_exp;
     private int Bug_flag;
@@ -24,7 +24,31 @@ public class processexpclass {
     private void CheckBug() {
     
     }
-    public String ProcessExp(Object String, Object int&) {
-    
+    public String ProcessExp(Object str_in, int flag) {
+    	String s=null;
+    	if(((String) str_in).startsWith("!")){
+			command=(String) str_in;
+			if(!Expression.isEmpty()){
+				if(command.startsWith("!simplify ")){
+					simplify sim = null;
+					sim.cmd_pro(str_in,flag);
+				}
+				else if(command.startsWith("!d/d")){
+					derivation der = null;
+					der.cmd_pro(str_in,flag);
+				}
+				else{
+					System.out.println("no command!");
+				}
+			}
+			else{
+				System.out.println("no expression!");
+			}
+		}
+		else{
+			expression exp = null;
+			exp.Expre_pro(str_in,flag);
+		}
+    	return s;
     }
 }

@@ -14,14 +14,15 @@ package polynomial;
 
 public class expression {
     private String Expression;
-    private String Expre;
+    private String[] Expre;
     private int Illegal_flag;
     private String Proedexp;
     private void Check_exp() {
     
     }
     
-    public String Expre_pro(Object String, Object int&) {
-    
+    public String[] Expre_pro(Object String, int flag) {
+    	Expre=Expression.split("\\+");
+		return Expre;
     }
 }
