@@ -25,6 +25,7 @@ public class PolynomialTest3 {
 		String result = poly.Derivative(testExpre, testValue);
 		String expectResult = "Error, no variable";
 		assertEquals(expectResult, result);
+		
 	}
 
 }
