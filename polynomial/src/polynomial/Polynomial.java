@@ -66,7 +66,7 @@ public class Polynomial
 		if(sim_expression.endsWith("+") || sim_expression.endsWith("-"))
 			sim_expression = sim_expression.substring(0, sim_expression.length()-1);
 		System.out.println(sim_expression);
-		expression();
+		expression(expression);
 		return sim_expression;
 	}
 	static String Derivative(String[] expre, String value)
@@ -143,7 +143,7 @@ public class Polynomial
 		System.out.println(der_str);
 		return der_str;
 	}
-	static String[] expression()
+	static String[] expression(String expression)
 	{
 		expre=expression.split("\\+");
 		return expre;
@@ -214,7 +214,7 @@ public class Polynomial
 					if(expression.startsWith("+"))
 					expression=expression.substring(1);
 					expression = expression.replace("-", "+-1*");
-					expression();
+					expression(expression);
 				}
 				else{
 					System.out.println("illegal char");
