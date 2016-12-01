@@ -27,14 +27,5 @@ public class PolynomialTest4 {
 		String expectResult = "Error";
 		assertEquals(expectResult, result);
 	}
-	public void testcmd_pro() {
-		simplify poly = new simplify();
-		String testExpre = "!Simplify x=1";
-		int flag = 0;
-		String testValue = "x y";
-		String result = poly.cmd_pro(testExpre, flag);
-		String expectResult = "1+2*y";
-		assertEquals(expectResult, result);
-	}
+
 }
-	

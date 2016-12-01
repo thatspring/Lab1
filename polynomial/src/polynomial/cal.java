@@ -22,10 +22,8 @@ public class cal {
     
     }
     
-    public String cmd_pro(Object String, int flag) {
+    public String cmd_pro(Object String, Object int&) {
     
-    		String s=null;
-    		return s;
     }
     
     public void Expression_pro() {
