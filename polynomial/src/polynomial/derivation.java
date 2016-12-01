@@ -10,7 +10,7 @@
 //
 
 
-
+package polynomial;
 
 public class derivation extends cal {
     public String cmd_pro(Object String, Object int&) {

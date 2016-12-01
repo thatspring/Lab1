@@ -9,7 +9,7 @@
 //
 //
 
-
+package polynomial;
 
 
 public class processexpclass {
@@ -21,11 +21,9 @@ public class processexpclass {
     private void Check_in() {
     
     }
-    
     private void CheckBug() {
     
     }
-    
     public String ProcessExp(Object String, Object int&) {
     
     }
